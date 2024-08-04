@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"           content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"           content="AI, AI สำหรับการสอน, โรงเรียนยุคใหม่, การสอนยุคใหม่, เทคโนโลยีการเรียนการสอน, Meta AI, Meta Llama 3.1">
+        <meta name="description"        content="ในยุคดิจิทัลที่เทคโนโลยี AI ก้าวกระโดดไปไกล การสร้างสื่อการสอนที่น่าสนใจและตรงใจนักเรียนเป็นเรื่องที่ทำได้ง่ายขึ้นด้วยเครื่องมือ AI ต่างๆ หนึ่งในกุญแจสำคัญที่ทำให้ AI สร้างสรรค์ผลงานได้ตรงใจเรามากที่สุด คือ Prompt หรือคำสั่งที่เราป้อนเข้าไปนั่นเอง">
+        <meta property="og:url"         content="https://kruscool.com/article/2024/0730-how-to-generate-prompt.html" />
+        <meta property="og:type"        content="article" />
+        <meta property="og:title"       content="สร้าง Prompt เก่ง ปั้นสื่อการสอนเจ๋ง" />
+        <meta property="og:description" content="ในยุคดิจิทัลที่เทคโนโลยี AI ก้าวกระโดดไปไกล การสร้างสื่อการสอนที่น่าสนใจและตรงใจนักเรียนเป็นเรื่องที่ทำได้ง่ายขึ้นด้วยเครื่องมือ AI ต่างๆ หนึ่งในกุญแจสำคัญที่ทำให้ AI สร้างสรรค์ผลงานได้ตรงใจเรามากที่สุด คือ Prompt หรือคำสั่งที่เราป้อนเข้าไปนั่นเอง" />
+        <meta property="og:image"       content="https://kruscool.com/article/2024/img/prompt.png" />
+
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="../style.css" rel="stylesheet">
+
+        <title>สร้าง Prompt เก่ง ปั้นสื่อการสอนเจ๋ง</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top bg-dark p-1" data-bs-theme="dark">
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" style="width: 2.5rem; margin-left: 0.25rem; margin-right: 0.25rem;"> KrusCool</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="/index.html">หน้าแรก</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#">สินค้า</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#">ข่าว</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="/article/index.html">บทความ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-center">
+            <a href="/index.html">
+                <img src="/img/cover_web.png" class="w-100" alt="แสดงตัวอย่างหน้าจอโปรแกรมตรวจข้อสอบ 2 หน้าจอวางข้าง เครื่องตรวจข้อสอบที่ตั้งอยู่บนโต๊ะ">
+            </a>
+        </div>
+
+        <div class="container mt-3">
+            <article>
+                <div id="intro">
+                    <h1>สร้าง Prompt เก่ง ปั้นสื่อการสอนเจ๋ง</h1>
+
+                    <p> 
+                        ในยุคดิจิทัลที่เทคโนโลยี AI ก้าวกระโดดไปไกล การสร้างสื่อการสอนที่น่าสนใจและตรงใจนักเรียนเป็นเรื่องที่ทำได้ง่ายขึ้นด้วยเครื่องมือ AI ต่างๆ 
+                        หนึ่งในกุญแจสำคัญที่ทำให้ AI สร้างสรรค์ผลงานได้ตรงใจเรามากที่สุด คือ Prompt หรือคำสั่งที่เราป้อนเข้าไปนั่นเอง
+                    </p>
+
+                    <div class="text-center mt-3 mb-3">
+                        <img class="rounded mx-auto w-100"  src="img/prompt.png" alt="คนสวมหน้ากาก VR เล่น computer บนโต๊ะทำงาน">
+                    </div>
+                </div>
+
+                <div id="what-is-prompt">
+                    <h2>Prompt คืออะไร?</h2>
+
+                    <p>
+                        Prompt ก็เหมือนกับคำสั่งที่เราบอก AI ว่าอยากได้อะไร เช่น ถ้าเราบอก AI ว่า "เขียนบทความสั้นๆ เกี่ยวกับการเปลี่ยนแปลงสภาพภูมิอากาศ" AI ก็จะสร้างบทความตามคำสั่งนั้นให้ 
+                        แต่ถ้าเราบอกว่า "เขียนบทความสั้นๆ เกี่ยวกับการเปลี่ยนแปลงสภาพภูมิอากาศที่น่าสนใจและเข้าใจง่าย เหมาะสำหรับนักเรียนชั้นประถมศึกษา" ผลลัพธ์ที่ได้ก็จะแตกต่างกันไป
+                    </p>
+                </div>
+
+                <div id="principal">
+                    <h2>หลักการสร้าง Prompt ให้ปัง</h2>
+
+                    <ol>
+                        <li>ชัดเจน เจาะจง: บอก AI ให้ละเอียดที่สุดว่าอยากได้อะไร เช่น อยากได้ภาพแบบไหน ข้อความสไตล์ไหน ความยาวเท่าไหร่</li>
+                        <li>ให้ข้อมูลบริบท: บอก AI เพิ่มเติม เช่น กลุ่มเป้าหมาย วัย เนื้อหาที่เกี่ยวข้อง</li>
+                        <li>ใช้ภาษาที่เข้าใจง่าย: หลีกเลี่ยงคำศัพท์เทคนิคที่ซับซ้อน</li>
+                        <li>ทดลองและปรับปรุง: การสร้าง Prompt เป็นเหมือนศิลปะ ต้องลองผิดลองถูกหลายๆ ครั้ง</li>
+                    </ol>
+                </div>
+
+                <div id="example">
+                    <h2>ตัวอย่าง Prompt ที่ดีและไม่ดี</h2>
+
+                    <ul>
+                        <li>
+                            <b>ชัดเจน เจาะจง: บอกรายละเอียดให้ครบถ้วนที่สุด</b>
+
+                            <ul>
+                                <li>ไม่ดี: "สร้างภาพเกี่ยวกับธรรมชาติ"</li>
+                                <li>ดี: "สร้างภาพทิวทัศน์ป่าฝนเขตร้อนที่มีน้ำตกไหลลงมา โดยใช้สีสันสดใสสไตล์ภาพวาดอิมเพรสชั่นนิสม์"</li>
+                            </ul>
+                        </li>
+
+                        <li class="mt-2">
+                            <b>ให้บริบท: บอกข้อมูลที่เกี่ยวข้อง เช่น กลุ่มเป้าหมาย วัย เนื้อหา</b>
+
+                            <ul>
+                                <li>ไม่ดี: "เขียนเรื่องราวเกี่ยวกับหุ่นยนต์"</li>
+                                <li>ดี: "เขียนเรื่องราวสั้นๆ เกี่ยวกับหุ่นยนต์ที่เป็นเพื่อนกับเด็กชายวัย 10 ขวบ โดยใช้ภาษาที่เข้าใจง่ายและมีภาพประกอบ"</li>
+                            </ul>
+                        </li>
+
+                        <li class="mt-2">
+                            <b>กำหนดรูปแบบ: ระบุรูปแบบที่ต้องการ เช่น บทกวี เรียงความ หรือสคริปต์</b>
+
+                            <ul>
+                                <li>ไม่ดี: "เขียนเกี่ยวกับการเปลี่ยนแปลงสภาพภูมิอากาศ"</li>
+                                <li>ดี: "เขียนบทกวีสไตล์ไฮกุเกี่ยวกับการเปลี่ยนแปลงสภาพภูมิอากาศ"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="prompt-type">
+                    <h2>ประเภทของ Prompt ที่น่าสนใจ</h2>
+
+                    <ol>
+                        <li>Prompt สร้างภาพ: สร้างภาพประกอบ สื่อการสอน หรือแม้แต่การ์ตูน</li>
+                        <li>Prompt สร้างข้อความ: สร้างบทความ บทกวี คำถาม หรือคำตอบ</li>
+                        <li>Prompt สร้างโค้ด: สร้างโค้ดโปรแกรมง่ายๆ สำหรับใช้ในการสอน</li>
+                        <li>Prompt สร้างเสียง: สร้างเสียงประกอบ หรือเสียงบรรยาย</li>
+                    </ol>
+                </div>
+
+                <div id="constrain">
+                    <h2>ข้อจำกัดและข้อควรระวัง</h2>
+
+                    <ol>
+                        <li>AI ไม่ใช่ทุกสิ่ง: AI ยังมีข้อจำกัดในการทำความเข้าใจความซับซ้อนของภาษาและบริบท</li>
+                        <li>ข้อมูลที่ได้อาจไม่ถูกต้อง: ควรตรวจสอบข้อมูลที่ได้จาก AI ก่อนนำไปใช้</li>
+                        <li>ลิขสิทธิ์: ควรระมัดระวังเรื่องลิขสิทธิ์ของภาพหรือข้อความที่สร้างโดย AI</li>
+                        <li>ความเป็นส่วนตัว: ไม่ควรป้อนข้อมูลส่วนบุคคลลงใน AI</li>
+                    </ol>
+                </div>
+
+                <div id="applying">
+                    <h2>ตัวอย่างการนำ Prompt ไปใช้ในชั้นเรียน</h2>
+
+                    <ol>
+                        <li>วิชาภาษาไทย: สร้างเรื่องเล่าจาก Prompt เช่น "จินตนาการว่าถ้าคุณเป็นนักบินอวกาศ คุณจะพบอะไรบนดาวดวงใหม่"</li>
+                        <li>วิชาคณิตศาสตร์: สร้างโจทย์ปัญหาจาก Prompt เช่น "ถ้ามีแอปเปิล 5 ผล และแบ่งให้เพื่อน 2 คนเท่าๆ กัน จะเหลือแอปเปิลกี่ผล"</li>
+                        <li>วิชาสังคมศึกษา: สร้างไทม์ไลน์เหตุการณ์สำคัญทางประวัติศาสตร์จาก Prompt เช่น "สร้างไทม์ไลน์เหตุการณ์สำคัญในสมัยสุโขทัย"</li>
+                    </ol>
+                </div>
+
+                <div id="summary">
+                    <h2>สรุป</h2>
+
+                    <p>
+                        การสร้าง Prompt เป็นทักษะที่สำคัญสำหรับครูในยุคดิจิทัล การเรียนรู้วิธีการสร้าง Prompt ที่ดีจะช่วยให้คุณครูสามารถนำ AI มาประยุกต์ใช้ในการสอนได้อย่างมีประสิทธิภาพมากยิ่งขึ้น 
+                        และสร้างสรรค์สื่อการสอนที่น่าสนใจเพื่อให้นักเรียนได้เรียนรู้อย่างสนุกสนาน
+                    </p>
+                </div>
+            </article>
+
+            <aside>
+                <h4>เนื้อหาที่เกี่ยวข้อง</h4>
+
+                <div class="p-1">
+                    <div class="card" style="width: 18rem;">
+                        <a href="0729-onet.html">
+                            <img class="rounded mx-auto w-100"  src="img/onet.jpg" alt="แสดงคำว่า O-NET ลอยหลัง background รูปกระดาษคำตอบ">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">การสอบ O-NET คืออะไร</h5>
+                            <p class="card-text">O-NET (Ordinary National Educational Test) : การทดสอบทางการศึกษาระดับชาติขั้นพื้นฐาน เพื่อทดสอบ ความรู้และความคิดรวบยอดของนักเรียนชั้นประถมศึกษาปีที่ 6 ชั้นมัธยมศึกษาปีที่ 3 และชั้นมัธยมศึกษาปีที่ 6 ตามมาตรฐาน การเรียนรู้ในหลักสูตรแกนกลางการศึกษาขั้นพื้นฐาน พุทธศักราช 2551</p>
+                            <a href="0729-onet.html" class="card-link">อ่านต่อ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-1">
+                    <div class="card" style="width: 18rem;">
+                        <a href="0728-ai-vs-teacher.html">
+                            <img class="rounded mx-auto w-100"  src="img/ai-vs-teacher.jpg" alt="หุ่นยนต์คุณครูกำลังสอนนักเรียนในห้อง สื่อถึงการนำ AI มาสอนนักเรียน">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">ผลกระทบของ AI ต่อวิชาชีพครู</h5>
+                            <p class="card-text">ปัญญาประดิษฐ์ (AI) กำลังเปลี่ยนแปลงหลายภาคส่วนของสังคม และวงการการศึกษาก็ไม่ใช่ข้อยกเว้น การนำ AI มาใช้ในการเรียนการสอนมีทั้งข้อดีและข้อเสียที่ส่งผลกระทบโดยตรงต่อบทบาทและหน้าที่ของครู</p>
+                            <a href="0728-ai-vs-teacher.html" class="card-link">อ่านต่อ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-1">
+                    <div class="card" style="width: 18rem;">
+                        <a href="0731-python-for-students.html" class="card-link">
+                            <img class="rounded mx-auto w-100"  src="img/python-for-student.jpg" alt="โลโก้ Python ลอยอยู่ข้างหน้าเด็กนักเรียน ที่กำลังใช้งานเครื่องคอมพิวเตอร์">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">แนะนำ Python สำหรับเด็กมัธยม</h5>
+                            <p class="card-text">การสอนการเขียนโปรแกรมให้กับเด็กมัธยมสามารถเปิดโอกาสใหม่ ๆ ให้กับพวกเขาได้อย่างมากมาย ภาษาโปรแกรมที่เหมาะสมสำหรับผู้เริ่มต้นคือ Python ด้วยโครงสร้างที่เรียบง่ายและชัดเจนทำให้ Python เป็นตัวเลือกที่ดีสำหรับการสอนการเขียนโปรแกรมให้กับเด็ก ๆ ในระดับมัธยม</p>
+                            <a href="0731-python-for-students.html" class="card-link">อ่านต่อ</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

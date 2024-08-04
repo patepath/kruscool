@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="ตรวจข้อสอบ, วิธีตรวจข้อสอบแบบง่ายๆ, วิธีตรวจข้อสอบแบบรวดเร็ว, สร้างกระดาษคำตอบเอง, โปรแกรมตรวจข้อสอบ, แอฟตรวจข้อสอบ, วิเคราะห์ผลสอบ, รายงานผลสอบ">
+        <meta name="description" content="">
+
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+
+        <title>ตรวจข้อสอบจำนวนมากอย่างถูกต้องแม่นยำ และรวดเร็วด้วยการใช้ระบบตรวจข้อสอบ Optical Mark Reader (OMR)</title>
+    </head>
+
+    <body>
+        <script>
+            if(screen.width > 700) {
+                window.location = 'index.html';
+            }
+        </script>
+
+        <nav class="navbar navbar-expand-lg sticky-top bg-dark" data-bs-theme="dark">
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" style="width: 2.5rem; margin-left: 0.25rem; margin-right: 0.25rem;"> KrusCool</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#feature">Feature</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#ourcustomers">Our Customers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#price">Price</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="/news/2024/0728-meta-open-new-ai.html">News</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="/article/index.html">Article</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="feature">
+            <div class="text-center">
+                <img src="img/anser_sheet_and_scanner-mobile.png" class="img1" alt="แสดงตัวอย่างกระดาษคำตอบที่รอการตรวจคำตอบจากเครื่องสแกนเนอร์ที่อยู่ข้างๆ โดยเครื่องวางอยู่บนโต๊ะให้ห้องเรียน">
+            </div>
+            
+            <div class="text-center pt-3 pb-3" style="height: 15rem; color: white; background-color: darkslategray;" >
+                <h1 style="padding-top: 3.5rem;">"รองรับการคิดคะแนนแบบ สทศ. และ O-NET"</h1>
+                <a href="https://lin.ee/lQAea3j" target="_blank"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36"></a>
+            </div>
+
+            <div class="justify-content-center">
+                <img src="img/notebook_is_running_the_answer_sheet_scanner_app-mobile.png" style="width: 100%" alt="Notebook ที่กำลังเปิดหน้าจอโปรแกรมสแกนกระดาษคำตอบ (Optical Mark Reade หรือ OMR) Background สื่อให้เห็นว่าเป็นการใช้ AI เพื่อเพิ่มความแม่นยำในการสแกน">
+            </div>
+
+            <div class="text-center pt-3 pb-3" style="height: 15rem; color: white; background-color: darkslategray;" >
+                <h1 style="padding-top: 3.5rem;">"ตรวจข้อสอบด้วยความแม่นยำ ง่าย สะดวก และรวดเร็ว"</h1>
+                <a href="https://lin.ee/lQAea3j" target="_blank"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+            </div>
+
+            <div class="justify-content-center">
+                <img src="img/answer_sheet_layout_example-mobile.png" style="width: 100%" alt="ตัวอย่าง Layout ของกระดาษคำตอบที่มีขีดด้านข้าง และด้านล่างกำกับไว้ตามตัวเลือกของกระดาษคำตอบ เพื่อลดความผิดพลาดในการสแกนกระดาษ">
+            </div>
+
+            <div class="text-center pt-3 pb-3" style="height: 15rem; color: white; background-color: darkslategray;" >
+                <h1 style="padding-top: 3.5rem;">"สามารถออกแบบ/พิมพ์กระดาษคำตอบได้เอง"</h1>
+                <a href="https://lin.ee/lQAea3j" target="_blank"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+            </div>
+
+            <div class="justify-content-center">
+                <img src="img/report_examples-mobile.png" style="width: 100%" alt="ตัวอย่างหน้าจอของโปรแกรมจำนวน 4 หน้าจอ แสดงผลการวิเคราะห์ข้อสอบในรูปแบบกราฟ หรือรูปแบบตาราง">
+            </div>
+
+            <div class="text-center pt-3 pb-3" style="height: 15rem; color: white; background-color: darkslategray;" >
+                <h1 style="padding-top: 3.5rem;">"เก็บสถิติ วิเคราะห์ รายงานผลการสอบ"</h1>
+                <a href="https://lin.ee/lQAea3j" target="_blank"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+            </div>
+
+            <div class="justify-content-center">
+                <img src="img/scanner_specification-mobile.png" style="width: 100%" alt="ข้อมูลคุณสมบัติของเครื่องสแกนเนอร์ที่บอกว่าสามารถสแกนกระดาษข้อสอบได้ 70-140 หน้าต่อนาที และสามารถสแกนหน้า-หลังกระดาษพร้อมกันได้">
+            </div>
+
+            <div class="text-center pt-3 pb-3" style="height: 15rem; color: white; background-color: darkslategray;" >
+                <h1 style="padding-top: 3.5rem;">"ตรวจข้อสอบได้ 70-140 แผ่นต่อนาที สแกนหน้าหลังพร้อมกัน"</h1>
+                <a href="https://lin.ee/lQAea3j" target="_blank"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+            </div>
+        </div>
+
+        <div id="ourcustomers">
+            <div class="justify-content-center">
+                <img src="img/customers.png" style="width: 100%" alt="รูป Logo ลูกค้าส่วนหนึ่ง ที่เคยซื้อระบบตรวจข้อสอบไปใช้งาน">
+            </div>
+
+            <div class="text-center pt-3 pb-3" style="height: 15rem; color: white; background-color: darkslategray;" >
+                <h1 style="padding-top: 3.5rem;">"ได้ผลตอบรับที่ดีจากลูกค้ากว่า 100 ราย"</h1>
+                <a href="https://lin.ee/lQAea3j" target="_blank"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+            </div>
+        </div>
+
+        <div id="price" clsss="container">
+            <div class="">
+                <img src="img/product_picture.png" style="width: 100%" alt="รูปหน้าจอโปรแกรมสำหรับสแกนเอกสาร โปรแกรมวิเคราะห์ข้อสอบ และเครื่องสแกนเนอร์ เพื่อบอกว่าใน 1 ชุดลูกค้าจะได้ของตามนี้">
+            </div>
+
+            <div class="p-1">
+                <h1 class="display-6 mt-3">Starter Pack : <span style="font-weight: bold; color: red">134,990฿</span></h1>
+                <ul class="fs-6">
+                    <li>เหมาะกับนักเรียนไม่เกิน 500 คน</li>
+                    <li>โปรแกรมสแกนกระดาษคำตอบ + เครื่องสแกนเนอร์ 1 เครื่อง</li>
+                    <li>โปรแกรมตรวจ และวิเคราะห์ผลสอบ</li>
+                    <li>บริการติดตั้ง On-site + อบรมการใช้งาน 1 วัน</li>
+                    <li>บริการออกแบบกระดาษคำตอบฟรี (ในครั้งแรก)</li>
+                    <li>บริการแก้ไข/ซ่อมบำรุง ผ่านโปรแกรม Remote</li>
+                </ul>
+
+                <span class="text text-danger fst-italic fs-6">*** ลูกค้ากรุณาเตรียม Computer หรือ Notebook จำนวน 1-2 เครื่อง และระบบ Network ที่สามารถใช้งาน Internet ได้ก่อนเข้าไปติดตั้ง ***</span>
+                
+                <div class="fs-6 mt-3">
+                    <span class="text-primary" style="font-weight: bold;">แล้วถ้าต้องการเพิ่มจำนวนนักเรียนล่ะ?</span> 
+                    <p>ง่าย ๆ ก็แค่สแกนคิวอาร์โค้ดเพิ่มเพื่อน เพื่อสั่งสินค้า หรือสอบถามโปรโมชั่นเพิ่มเติม เรายังมี Package อื่น ๆ ที่เหมาะสมกับการใช้งาน และงบประมาณของลูกค้าแต่ละท่าน</p>
+                </div>
+
+                <div class="text-center mt-3 mb-3">
+                    <img src="img/qrcode.png" class="w-75" >
+                </div>
+
+            </div>
+        </div>
+
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyCxs2OyTXBAlzwmuhZpvxF8Uwh_0WBMLW0",
+                authDomain: "school-c61bd.firebaseapp.com",
+                projectId: "school-c61bd",
+                storageBucket: "school-c61bd.appspot.com",
+                messagingSenderId: "725296809583",
+                appId: "1:725296809583:web:21da58178dd5ee294f6f9a",
+                measurementId: "G-03FE5RG7BG"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

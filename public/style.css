@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    padding: -px;
+}
+
+@media screen and (min-width: 900px) {
+   .img1 {
+        width: 100vw;
+   } 
+}
+
+@media screen and (max-width: 600px) {
+   .img1 {
+        width: 100vw;
+   } 
+    
+}
